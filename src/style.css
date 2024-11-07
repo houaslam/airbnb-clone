@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+    box-sizing: border-box;
+}
+:root{
+	--text : #222222;
+	--highlight: #FF5A5F;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+
+nav{
+	display: flex;
+	padding: 20px 36px;
+	height: 70px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 2px 0px, rgba(60, 64, 67, 0.15) 0px 0px 16px 0px;
+}
+
+nav img{
+	width:100px;
+}
+
+section{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+main img{
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+
+.hero--title{
+	margin-bottom: 16px;
+	color: var(--text);
+}
+
+.hero--info{
+	font-size: 16px;
+	margin-top: 0;
+	color: var(--text);
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	/* position: absolute; */
+	gap: 10px;
+	font-size: 12px;
+}
+
+.card--status{
+	position: relative;
+	top: 12%;
+	/* background-color: red; */
+}
+
+.card--photo{
+	width: 176px;
+	border-radius: 9px;
+	margin: 0;
+}
+
+.rating--info{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.card--rating-star{
+	width: 14px;
+	margin: 0;
+}
+
+.grey{
+	font-weight: lighter;
+	color: rgb(141, 141, 141);
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.card--info{
+	font-weight: 100;
+	font-size: 12px;
+}
