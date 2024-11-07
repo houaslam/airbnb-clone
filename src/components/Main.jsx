@@ -1,11 +1,12 @@
-import images from '../assets/photo-grid.png';
+import images from '/assets/photo-grid.png';
+import photo from '/assets/katie-zaferes.png'
 import Card from './Card';
+import Data from '../data'
 
-export default function Main(){
-
-	const Hero = (
-		<section>
-			<img src={images} alt="Image stack" />
+function Hero(){
+	return (
+		<section className='hero'>
+			<img className='hero--photo' src={images} alt="Image stack" />
 			<h1 className='hero--title'>Online Experiences</h1>
 			<p className='hero--info'>
 				Join unique interactive activities led by
@@ -14,10 +15,24 @@ export default function Main(){
 			</p>
 		</section>
 	)
+}
+
+export default function Main(){
+	const cardElements = Data.map((x)=>{
+		return (
+			<Card 
+				key = {x.id}
+				{...x}
+			/>
+		)
+	})
+
 	return (
 		<main>
-			{/* {Hero} */}
-			<Card/>
+			<Hero />
+			<section className='cards-list'>
+				{cardElements}
+			</section>
 		</main>
 	)
 }
