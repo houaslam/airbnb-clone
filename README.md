@@ -1,6 +1,7 @@
 <h1>✈️ Airbnb clone</h1>
 
 <h2>📝 Overview</h2>
+<img src="./public/assets/design.png/" alt="design image" width=80% >
 <p>
     As the first project in my <strong><font color="red">ReactJs</font></strong> learning journey, I created an Airbnb clone website. This project helped me understand key React concepts while building a functional interface similar to the Airbnb platform.
 </p>
