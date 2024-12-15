@@ -1,0 +1,6 @@
+asgiref==3.8.1
+Django==5.1.1
+django-cors-headers
+django-environ==0.9.0
+djangorestframework
+requests
